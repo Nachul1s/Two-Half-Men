@@ -1,0 +1,460 @@
+  <div class="particles" id="particles"></div>
+    
+    <div class="container my-5">
+        <div class="quiz-header floating">
+            <h1 class="quiz-title">Cultura Argentina</h1>
+            <p class="quiz-subtitle">Pon a prueba tus conocimientos culturales</p>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 7%;" aria-valuenow="7" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="d-flex justify-content-between mt-2">
+                <small>Progreso: <span id="progress-text">1/15</span></small>
+                <small id="timer">Tiempo: 00:00</small>
+            </div>
+        </div>
+        
+        <div id="carouselExample" class="carousel slide" data-bs-interval="false">
+            <div class="carousel-inner">
+                <!-- Pregunta 1 -->
+                <div class="carousel-item active">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 1 de 15</h5>
+                            <p class="card-text">¿Qué género musical surgido en Buenos Aires a fines del siglo XIX se consolidó como símbolo cultural del país?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p1o1">
+                                    <label class="form-check-label" for="p1o1">Rock nacional</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p1o2">
+                                    <label class="form-check-label" for="p1o2">Tango</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p1o3">
+                                    <label class="form-check-label" for="p1o3">Folklore</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p1o4">
+                                    <label class="form-check-label" for="p1o4">Cumbia</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 2 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 2 de 15</h5>
+                            <p class="card-text">¿Quién fue el primer presidente argentino elegido por voto secreto, universal y obligatorio?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p2o1">
+                                    <label class="form-check-label" for="p2o1">Julio A. Roca</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p2o2">
+                                    <label class="form-check-label" for="p2o2">Hipólito Yrigoyen</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p2o3">
+                                    <label class="form-check-label" for="p2o3">Bartolomé Mitre</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p2o4">
+                                    <label class="form-check-label" for="p2o4">Juan D. Perón</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 3 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 3 de 15</h5>
+                            <p class="card-text">¿Qué día se celebra el Día de la Independencia argentina?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p3o1">
+                                    <label class="form-check-label" for="p3o1">25 de mayo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p3o2">
+                                    <label class="form-check-label" for="p3o2">9 de julio</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p3o3">
+                                    <label class="form-check-label" for="p3o3">17 de agosto</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p3o4">
+                                    <label class="form-check-label" for="p3o4">10 de diciembre</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 4 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 4 de 15</h5>
+                            <p class="card-text">¿Qué costumbre argentina se asocia con compartir y conversar entre amigos o familia?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p4o1">
+                                    <label class="form-check-label" for="p4o1">La siesta</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p4o2">
+                                    <label class="form-check-label" for="p4o2">El mate</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p4o3">
+                                    <label class="form-check-label" for="p4o3">El truco</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p4o4">
+                                    <label class="form-check-label" for="p4o4">La sobremesa</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 5 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 5 de 15</h5>
+                            <p class="card-text">¿Qué compositor argentino es considerado el mayor innovador del tango, famoso por obras como "Adiós Nonino"?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p5o1">
+                                    <label class="form-check-label" for="p5o1">Aníbal Troilo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p5o2">
+                                    <label class="form-check-label" for="p5o2">Astor Piazzolla</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p5o3">
+                                    <label class="form-check-label" for="p5o3">Osvaldo Pugliese</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p5o4">
+                                    <label class="form-check-label" for="p5o4">Juan D'Arienzo</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 6 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 6 de 15</h5>
+                            <p class="card-text">¿Qué presidente argentino impulsó la reforma constitucional de 1994?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p6o1">
+                                    <label class="form-check-label" for="p6o1">Raúl Alfonsín</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p6o2">
+                                    <label class="form-check-label" for="p6o2">Carlos Menem</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p6o3">
+                                    <label class="form-check-label" for="p6o3">Néstor Kirchner</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p6o4">
+                                    <label class="form-check-label" for="p6o4">Fernando de la Rúa</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 7 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 7 de 15</h5>
+                            <p class="card-text">¿Quién encabezó la Reforma Universitaria de 1918 en Córdoba, que marcó un cambio en la educación latinoamericana?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p7o1">
+                                    <label class="form-check-label" for="p7o1">Hipólito Yrigoyen</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p7o2">
+                                    <label class="form-check-label" for="p7o2">Los estudiantes universitarios</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p7o3">
+                                    <label class="form-check-label" for="p7o3">Juan B. Justo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p7o4">
+                                    <label class="form-check-label" for="p7o4">Julio Argentino Roca</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 8 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 8 de 15</h5>
+                            <p class="card-text">¿Qué ícono porteño se ilumina en fechas patrias y celebraciones nacionales?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p8o1">
+                                    <label class="form-check-label" for="p8o1">La Casa Rosada</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p8o2">
+                                    <label class="form-check-label" for="p8o2">El Cabildo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p8o3">
+                                    <label class="form-check-label" for="p8o3">El Obelisco</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p8o4">
+                                    <label class="form-check-label" for="p8o4">El Teatro Colón</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 9 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 9 de 15</h5>
+                            <p class="card-text">¿Qué plato típico argentino se cocina tradicionalmente en reuniones familiares y domingos?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p9o1">
+                                    <label class="form-check-label" for="p9o1">La empanada</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p9o2">
+                                    <label class="form-check-label" for="p9o2">El asado</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p9o3">
+                                    <label class="form-check-label" for="p9o3">La pizza con fainá</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p9o4">
+                                    <label class="form-check-label" for="p9o4">El locro</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 10 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 10 de 15</h5>
+                            <p class="card-text">¿Qué cantante y escritora argentina es famosa por canciones infantiles, poemas y obras como "Manuelita" y "El Reino del Revés"?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p10o1">
+                                    <label class="form-check-label" for="p10o1">Mercedes Sosa</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p10o2">
+                                    <label class="form-check-label" for="p10o2">María Elena Walsh</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p10o3">
+                                    <label class="form-check-label" for="p10o3">Leda Valladares</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p10o4">
+                                    <label class="form-check-label" for="p10o4">Teresa Parodi</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 11 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 11 de 15</h5>
+                            <p class="card-text">¿Qué provincia argentina es conocida como "la tierra del sol y del buen vino"?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p11o1">
+                                    <label class="form-check-label" for="p11o1">San Juan</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p11o2">
+                                    <label class="form-check-label" for="p11o2">Mendoza</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p11o3">
+                                    <label class="form-check-label" for="p11o3">La Rioja</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p11o4">
+                                    <label class="form-check-label" for="p11o4">Catamarca</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 12 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 12 de 15</h5>
+                            <p class="card-text">¿Qué prócer argentino lideró la Expedición Libertadora del Ejército de los Andes y es conocido como el "Padre de la Patria"?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p12o1">
+                                    <label class="form-check-label" for="p12o1">Manuel Belgrano</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p12o2">
+                                    <label class="form-check-label" for="p12o2">José de San Martín</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p12o3">
+                                    <label class="form-check-label" for="p12o3">Juan Martín de Pueyrredón</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p12o4">
+                                    <label class="form-check-label" for="p12o4">Bernardino Rivadavia</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 13 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 13 de 15</h5>
+                            <p class="card-text">¿Qué día se conmemora el Día de la Memoria por la Verdad y la Justicia en Argentina?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p13o1">
+                                    <label class="form-check-label" for="p13o1">24 de marzo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p13o2">
+                                    <label class="form-check-label" for="p13o2">10 de diciembre</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p13o3">
+                                    <label class="form-check-label" for="p13o3">20 de junio</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p13o4">
+                                    <label class="form-check-label" for="p13o4">2 de abril</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 14 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 14 de 15</h5>
+                            <p class="card-text">¿Cuál es el origen de la tradición de comer ñoquis el 29 de cada mes en Argentina?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p14o1">
+                                    <label class="form-check-label" for="p14o1">Una tradición italiana que simboliza prosperidad y trabajo</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p14o2">
+                                    <label class="form-check-label" for="p14o2">Un decreto económico del siglo XX</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p14o3">
+                                    <label class="form-check-label" for="p14o3">Una costumbre de los gauchos</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p14o4">
+                                    <label class="form-check-label" for="p14o4">Un ritual religioso colonial</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Pregunta 15 -->
+                <div class="carousel-item">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h5 class="card-title">Pregunta 15 de 15</h5>
+                            <p class="card-text">¿Qué expresidente argentino fue el primero en asumir durante el siglo XXI?</p>
+                            <form>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p15o1">
+                                    <label class="form-check-label" for="p15o1">Néstor Kirchner</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p15o2">
+                                    <label class="form-check-label" for="p15o2">Eduardo Duhalde</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p15o3">
+                                    <label class="form-check-label" for="p15o3">Cristina Fernández</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="p15o4">
+                                    <label class="form-check-label" for="p15o4">Fernando de la Rúa</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Botones de control del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+        
+        <div class="nav-buttons">
+            <button class="btn btn-futurist" id="prev-btn">
+                <i class="fas fa-arrow-left me-2"></i>Anterior
+            </button>
+            <button class="btn btn-futurist" id="next-btn">
+                Siguiente<i class="fas fa-arrow-right ms-2"></i>
+            </button>
+        </div>
+    </div>
