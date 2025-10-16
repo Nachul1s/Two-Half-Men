@@ -8,7 +8,7 @@
   },
   "include": [
     "src/**/*.ts"
-  ],
+, "src/app/pages/boton-home/boton-home.ts"  ],
   "exclude": [
     "src/**/*.spec.ts"
   ]

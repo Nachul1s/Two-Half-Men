@@ -1,0 +1,23 @@
+<div class="text-center mt-4">
+  <button class="btn btn-primary" (click)="comenzar()">Comenzar</button>
+</div>
+
+<div *ngIf="showCards" class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+  <div class="card" style="width: 18rem;">
+    <img src="https://via.placeholder.com/286x180.png?text=Imagen+1" class="card-img-top" alt="imagen1">
+    <div class="card-body">
+      <h5 class="card-title">Card title 1</h5>
+      <p class="card-text">Texto de ejemplo para la primera tarjeta.</p>
+      <a href="#" class="btn btn-primary">Ir</a>
+    </div>
+  </div>
+
+  <div class="card" style="width: 18rem;">
+    <img src="https://via.placeholder.com/286x180.png?text=Imagen+2" class="card-img-top" alt="imagen2">
+    <div class="card-body">
+      <h5 class="card-title">Card title 2</h5>
+      <p class="card-text">Texto de ejemplo para la segunda tarjeta.</p>
+      <a href="#" class="btn btn-primary">Ir</a>
+    </div>
+  </div>
+</div>
