@@ -6,7 +6,7 @@ import { Inicio } from './pages/inicio/inicio';
   selector: 'app-root',
   imports: [RouterOutlet, Inicio],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'] // Corregido aquí
 })
 export class App {
   protected readonly title = signal('Quiz');

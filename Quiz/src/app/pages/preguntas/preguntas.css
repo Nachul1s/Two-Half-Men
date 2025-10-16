@@ -1,0 +1,27 @@
+.carousel-control-prev-icon{
+    background-color: black;
+}
+
+.carousel-control-next-icon{
+    background-color: black;
+}
+
+#carouselExample {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  width: 100%;
+  max-width: 600px;
+}
+
+#carouselExample{
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-color: black;
+}
